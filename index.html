@@ -17,7 +17,12 @@ body {
   justify-content: center;
   align-items: flex-start;
   padding: 40px 20px;
-  background: linear-gradient(rgba(0,0,0,.35), rgba(0,0,0,.55)), url("fondo.png") center / cover no-repeat fixed;
+  background: linear-gradient(rgba(0,0,0,.35), rgba(0,0,0,.55)), url("fondo.png") center 80% / max(100vw, 120vh) auto no-repeat fixed;
+}
+@media (min-width: 900px) {
+  body {
+    background-position: center 45%;
+  }
 }
 main {
   width: 100%;
