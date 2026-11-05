@@ -8,11 +8,6 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600&display=swap" rel="stylesheet">
 <style>
-:root {
-  --verde: #009246;
-  --blanco: #f4f5f0;
-  --rojo: #ce2b37;
-}
 * { box-sizing: border-box; margin: 0; padding: 0; }
 html, body { min-height: 100%; }
 body {
@@ -22,14 +17,7 @@ body {
   justify-content: center;
   align-items: flex-start;
   padding: 40px 20px;
-  background: linear-gradient(120deg, var(--verde), var(--blanco), var(--rojo), var(--blanco), var(--verde));
-  background-size: 400% 400%;
-  animation: fondo 14s ease-in-out infinite;
-}
-@keyframes fondo {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
+  background: linear-gradient(rgba(0,0,0,.35), rgba(0,0,0,.55)), url("fondo.png") center / cover no-repeat fixed;
 }
 main {
   width: 100%;
@@ -66,7 +54,6 @@ main {
 .boton svg { width: 36px; height: 36px; flex: none; }
 .boton span { flex: 1; text-align: center; padding-right: 36px; }
 @media (prefers-reduced-motion: reduce) {
-  body { animation: none; }
   .boton { transition: none; }
 }
 </style>
